@@ -10,8 +10,9 @@ ChatGeoPT is a toy demo for exploring ideas related to using Large Languge Model
 
 The entirety of ChatGeoPT is under 200 lines of Python code. It is built on top of some amazingly powerful libraries and tools, including OpenAI's language models, OSM's Overpass API, and Streamlit.
 
-To run ChatGeoPT, please install the requirements in `requirements.txt` using your favorite virtual enviornment manager. You can then run the Streamlit app using the command `streamlit run app.py`. Please note that you will need to set an enviornment variable `OPENAI_API_KEY`, which should be a valid OpenAI API Key, in order to query the GPT-3 LLM.
-
-Further note that this code is meant for demonstration purposes only -- we can almost gaurantee you will break it when using it for even basic searches.
+**Please note** that this code is meant for demonstration purposes only -- we can almost gaurantee you will break it when using it for even basic searches.
 
 For more information, check out our blog post here: [insert link]
+
+### Running ChatGeoPT
+To run ChatGeoPT, please install the requirements in `requirements.txt` using your favorite virtual enviornment manager. In order for the Folium map to load in the Streamlit app, you will then need to manually downgrad the `branca` package to `branca==0.3.1`. (This is not strictly permitted by package dependencies, hence the need to manually downgrade. Again, did we say this is just a demo? :smile:) You can then run the Streamlit app using the command `streamlit run app.py`. You will also need to set an enviornment variable `OPENAI_API_KEY`, which should be a valid OpenAI API Key, in order to query the GPT-3 API.
