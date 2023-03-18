@@ -1,5 +1,5 @@
 # ChatGeoPT
-A very basic, very brittle proof of concept for an AI assistant for geospatial search [blog post]
+A very basic, very brittle proof of concept for an AI assistant for geospatial search [[blog post](https://medium.com/@bengmstrong/chatgeopt-exploring-the-future-of-talking-to-our-maps-b1f82903bb05)]
 
 
 https://user-images.githubusercontent.com/108955227/225982137-fadd31ec-1339-4d47-8483-decbbbef7ee0.mov
@@ -12,7 +12,7 @@ The entirety of ChatGeoPT is under 200 lines of Python code. It is built on top 
 
 **Please note** that this code is meant for demonstration purposes only -- we can almost gaurantee you will break it when using it for even basic searches.
 
-For more information, check out our blog post here: [blog post]
+For more information, check out our blog post [here](https://medium.com/@bengmstrong/chatgeopt-exploring-the-future-of-talking-to-our-maps-b1f82903bb05)
 
 ### Running ChatGeoPT
 To run ChatGeoPT, please install the requirements in `requirements.txt` using your favorite virtual enviornment manager. In order for the Folium map to load in the Streamlit app, you will then need to manually downgrade the `branca` package to `branca==0.3.1`. (This is not strictly permitted by package dependencies, hence the need to manually downgrade. Again, did we say this is just a demo? :smile:) You can then run the Streamlit app using the command `streamlit run app.py`. You will also need to set an enviornment variable `OPENAI_API_KEY`, which should be a valid OpenAI API Key, in order to query the GPT-3 API.
