@@ -15,4 +15,7 @@ The entirety of ChatGeoPT is under 200 lines of Python code. It is built on top 
 For more information, check out our blog post here: [insert link]
 
 ### Running ChatGeoPT
-To run ChatGeoPT, please install the requirements in `requirements.txt` using your favorite virtual enviornment manager. In order for the Folium map to load in the Streamlit app, you will then need to manually downgrad the `branca` package to `branca==0.3.1`. (This is not strictly permitted by package dependencies, hence the need to manually downgrade. Again, did we say this is just a demo? :smile:) You can then run the Streamlit app using the command `streamlit run app.py`. You will also need to set an enviornment variable `OPENAI_API_KEY`, which should be a valid OpenAI API Key, in order to query the GPT-3 API.
+To run ChatGeoPT, please install the requirements in `requirements.txt` using your favorite virtual enviornment manager. In order for the Folium map to load in the Streamlit app, you will then need to manually downgrade the `branca` package to `branca==0.3.1`. (This is not strictly permitted by package dependencies, hence the need to manually downgrade. Again, did we say this is just a demo? :smile:) You can then run the Streamlit app using the command `streamlit run app.py`. You will also need to set an enviornment variable `OPENAI_API_KEY`, which should be a valid OpenAI API Key, in order to query the GPT-3 API.
+
+### Troubleshooting
+Not getting great results? Give feedback to GPT-3 directly in the chatbox (e.g. "That's searches the wrong area -- can you try again?") The more specific the feedback, the better. If that doesn't work, try restarting the app. Sometimes GPT-3 gets stuck in a loop of bad decisions, and restarting the app will refresh its state.
