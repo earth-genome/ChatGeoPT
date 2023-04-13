@@ -3,6 +3,7 @@ import openai
 import requests
 import streamlit as st
 import tiktoken
+import streamlit_folium
 
 import os
 
@@ -112,7 +113,7 @@ def main():
                                 folium.Marker([element["lat"], element["lon"]]).add_to(m)
 
                         # Display the map
-                        st.write(m)
+                        streamlit_folium.folium_static(m)
 
                         # If the request for summary of the API response is shorter than 1500 tokens,
                         # use the Reader model to generate a response
